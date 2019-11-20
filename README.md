@@ -1,12 +1,12 @@
 # *[Poner aquí el Título del Proyecto]*
 ---
-#### Materia: *[Poner aquí nombre de la materia]*
+#### Materia: Laboratorio de Desarrollo de Aplicaciones Web
 
-##### Campus: *[Poner aquí su campus]*
+##### Campus: Santa FE
 
 ##### Integrantes:
-1. *[Poner aquí Nombre y Apellidos del integrante 1]*
-2. *[Poner aquí Nombre y Apellidos del integrante 2]*
+1. *Isaac Halabe Husny*
+2. *Mauricio Rico Zavala*
 
 ---
 ## 1. Aspectos generales
