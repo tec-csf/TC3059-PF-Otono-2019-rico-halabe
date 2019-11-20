@@ -55,7 +55,16 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 ## 2. Descripción del proyecto
 
-*[Incluya aquí la descripción del proyecto.]*
+El proyecto que se estará implementando a la plataforma de la nube es una plataforma de ERP orientada para el uso de un despacho de arquitectos de interiores. El ERP o Enterprise Resource Planning regularmente son conformados por herramientas de información para llevar un control gerencial donde se integra y maneja la planificación de una empresa. Para este ERP en específico se utilizan tres herramientas populares en el desarrollo web:
+
+* VueJS
+* Laravel
+* SQL
+
+En el caso específico de este proyecto la herramienta propuesta lleva a cabo las siguientes funciones de planificación para el despacho que la utiliza:
+1. 
+
+
 
 ## 3. Solución
 
@@ -73,10 +82,12 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.3 Frontend
 
-*[Incluya aquí una explicación de la solución utilizada para el frontend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+Para la solución de frontend, la herramienta esta desarrollada principalmente en Javascript utilizando VueJS. El Framework de VueJs es uno de los más utilizados en años recientes debido a la facilidad que ofrece para poder crear interfaces de usuario. Esta solución es adecuada para plataformas con un enfasis en simplicidad y usabilidad con su habilidad de crear aplicaciones de "una página" y cuentan con flexibilidad para la integración de extensas librerías.
 
 #### 3.3.1 Lenguaje de programación
+Javascript
 #### 3.3.2 Framework
+VueJS
 #### 3.3.3 Librerías de funciones o dependencias
 
 ### 3.4 Backend
@@ -84,7 +95,9 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 *[Incluya aquí una explicación de la solución utilizada para el backend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
 
 #### 3.4.1 Lenguaje de programación
+PHP
 #### 3.4.2 Framework
+Laravel
 #### 3.4.3 Librerías de funciones o dependencias
 
 ### 3.5 API
