@@ -2,11 +2,11 @@
 ---
 #### Materia: Laboratorio de Desarrollo de Aplicaciones Web
 
-##### Campus: Santa FE
+##### Campus: Santa Fe
 
 ##### Integrantes:
-1. *Isaac Halabe Husny*
-2. *Mauricio Rico Zavala*
+1. Isaac Halabe Husny
+2. Mauricio Rico Zavala
 
 ---
 ## 1. Aspectos generales
