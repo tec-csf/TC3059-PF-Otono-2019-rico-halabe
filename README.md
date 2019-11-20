@@ -1,6 +1,6 @@
 # *[Poner aquí el Título del Proyecto]*
 ---
-#### Materia: Laboratorio de Desarrollo de Aplicaciones Web
+#### Materia: Desarrollo de Aplicaciones en la Nube
 
 ##### Campus: Santa Fe
 
