@@ -1,0 +1,454 @@
+/* ## Fonts Settings */
+/* -- Roboto */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v15/2tsd397wLxj96qwHyNIkxPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 100;
+	src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url(https://fonts.gstatic.com/s/roboto/v15/12mE4jfMSBTmg-81EiS-Yfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 500;
+	src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(https://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Y4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 900;
+	src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+
+/* -- Droid Serif */
+@font-face {
+	font-family: 'Droid Serif';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Droid Serif'), local('DroidSerif'), url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Droid Serif';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(https://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Droid Serif';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(https://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5898u2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Droid Serif';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url(https://fonts.gstatic.com/s/droidserif/v6/c92rD_x0V1LslSFt3-QEpo9ObOXPY1wUIXqKtDjSdsY.woff2) format('woff2');
+}
+
+/* -- Poppins */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v1/D2gN9uyZ9Ucx1fJ1Fhb7s_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v1/HLBysyo0MQBO_7E-DWLwzg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v1/yQWaOD4iNU5NTY0apN-qj_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v1/zO07Oxe3SOlw0l2YX2sdIfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v1/57TQ-anwthzkETEIO4jESPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+
+/* - Work Sans */
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Work Sans Thin'), local('WorkSans-Thin'), url(https://fonts.gstatic.com/s/worksans/v2/S5P2Ny-Dw8BHKH0UfdbgXY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 200;
+	src: local('Work Sans ExtraLight'), local('WorkSans-ExtraLight'), url(https://fonts.gstatic.com/s/worksans/v2/u_mYNr_qYP37m7vgvmIYZ-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Work Sans Light'), local('WorkSans-Light'), url(https://fonts.gstatic.com/s/worksans/v2/FD_Udbezj8EHXbdsqLUpl-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v2/ElUAY9q6T0Ayx4zWzW63VFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Work Sans Medium'), local('WorkSans-Medium'), url(https://fonts.gstatic.com/s/worksans/v2/Nbre-U_bp6Xktt8cpgwaJOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'), url(https://fonts.gstatic.com/s/worksans/v2/z9rX03Xuz9ZNHTMg1_ghGegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Work Sans Bold'), local('WorkSans-Bold'), url(https://fonts.gstatic.com/s/worksans/v2/4udXuXg54JlPEP5iKO5Amegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: local('Work Sans ExtraBold'), local('WorkSans-ExtraBold'), url(https://fonts.gstatic.com/s/worksans/v2/IQh-ap2Uqs7kl1YINeeEGugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Work Sans Black'), local('WorkSans-Black'), url(https://fonts.gstatic.com/s/worksans/v2/Hjn0acvjHfjY_vAK9Uc6gugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+/* - PT Sans */
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'PT Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'PT Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+/* -- Section Header */
+.section-header {
+	text-align: left;
+	margin-bottom: 68px;
+	background-image: url('../assets/images/icon/section-separator.png');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-bottom: 30px;
+	margin-top: -5px;
+}
+/* .section-header h3 {
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 38px;
+	letter-spacing: 1.14px;
+	color: #111;
+	margin-top: 0;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+.section-header p {
+	font-family: 'Droid Serif', serif;
+	font-size: 15px;
+	letter-spacing: 1.2px;
+	font-style:italic;
+	color: #888;
+	margin-bottom: 0;
+} */
+
+.card-body {
+	/* overflow: -webkit-paged-y;  */
+}
+
+.productContainer {
+    height: 600px!important;
+    width: 100%!important;
+}
+
+.selectedProduct {
+    height: auto!important;
+    width: 800px!important;
+    margin: auto!important;
+    padding: auto!important;
+
+    position: absolute!important;
+    top: 0px!important;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+}
+
+.previewContainer > .section-header h3 {
+    margin: 0!important;
+}
+
+.previewContainer > .section-header  {
+    background-position: 0px 30px!important;
+    margin: 0px!important;
+}
+
+.previewContainer {
+    font-size: 11px!important;
+    padding: 2px!important;
+    margin: 0!important;
+
+    width: 100%!important;
+
+    overflow-y: scroll!important;
+
+    height: 510px!important;
+    padding-right: -10px!important;
+    border-bottom: 2px solid rgb(31,139,242)!important;
+}
+
+.previewItems {
+
+    padding-top: 5px!important;
+    padding-bottom: 20px!important;
+
+    margin-bottom: 20px!important;
+}
+
+.previewItems li {
+    line-height: 100%!important;
+    font-size: 13px!important;
+    padding: 2px!important;
+}
+
+.previewRent {
+    /* border: 2px solid green; */
+    margin: 0!important;
+    font-size: 13px!important;
+    margin-bottom: 20px!important;
+}
+
+.previewSale {
+    /* border: 2px solid green; */
+    margin: 0!important;
+    font-size: 13px!important;
+    margin-bottom: 20px!important;
+}
+
+.previewContainer > .section-header h3 {
+    margin: 0!important;
+}
+
+.previewContainer > .section-header  {
+    background-position: 0px 30px!important;
+    margin: 0px!important;
+}
+
+.previewSale > .section-header h3 {
+    margin: 0!important;
+}
+
+.previewSale > .section-header  {
+    background-position: 0px 30px!important;
+    margin: 0px!important;
+}
+
+.previewRent > .section-header h3 {
+    margin: 0!important;
+}
+
+.previewRent > .section-header  {
+    background-position: 0px 30px!important;
+    margin: 0px!important;
+}
+
+.previewBoth > .section-header h3 {
+    margin: 0!important;
+}
+
+.previewBoth > .section-header  {
+    background-position: 0px 30px!important;
+    margin: 0px!important;
+}
+
+.previewSale p, .previewRent p {
+    font-family: 'Droid Serif'!important;
+    letter-spacing: 1.2px!important;
+	font-style:italic!important;
+	color: #888!important;
+}
+
+.previewBoth {
+    /* border: 2px solid #1b5a9d; */
+    border-radius: 10px!important;
+    font-size: 12px!important;
+    /* list-style-image: url('../images/accessories/accessories-ic4.png'); */
+}
+
+#tank {
+    list-style-image: url('../assets/images/accessories/accessories-ic3.png')!important;
+}
+
+#water {
+    list-style-image: url('../assets/images/accessories/accessories-ic1.png')!important;
+}
+
+#floor {
+    list-style-image: url('../assets/images/accessories/accessories-ic4.png')!important;
+}
+
+#decoration {
+    list-style-image: url('../assets/images/accessories/accessories-ic5.png')!important;
+}
+
+#ornament {
+    list-style-image: url('../assets/images/accessories/accessories-ic4.png')!important;
+}
+
+#fish {
+    list-style-image: url('../assets/images/accessories/accessories-ic4.png')!important;
+}
+
+#bundle {
+    list-style-image: url('../assets/images/accessories/accessories-ic5.png')!important;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+	.selectedProduct {
+	    height: auto!important;
+	    width: 700px!important;
+	    margin: auto!important;
+	    padding: auto!important;
+
+	    position: absolute!important;
+	    top: 0px!important;
+	    left: 0;
+	    right: 0;
+	    margin: 0px auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.selectedProduct {
+	    height: auto!important;
+	    width: 550px!important;
+	    margin: auto!important;
+	    padding: auto!important;
+
+	    position: absolute!important;
+	    top: 0px!important;
+	    left: 0;
+	    right: 0;
+	    margin: 0px auto;
+	}
+}
+
+@media (max-width: 639px) {
+	.selectedProduct {
+	    height: auto!important;
+	    width: 450px!important;
+	    margin: auto!important;
+	    padding: auto!important;
+
+	    position: absolute!important;
+	    top: 0px!important;
+	    left: 0;
+	    right: 0;
+	    margin: 0px auto;
+	}
+}
+
+@media (max-width: 479px) {
+	.selectedProduct {
+	    height: auto!important;
+	    width: 350px!important;
+	    margin: auto!important;
+	    padding: auto!important;
+
+	    position: absolute!important;
+	    top: 0px!important;
+	    left: 0;
+	    right: 0;
+	    margin: 0px auto;
+	}
+}

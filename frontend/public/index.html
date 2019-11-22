@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="" lang="es"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!-- Standard Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="%PUBLIC_URL%/images/favicon.png" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!-- Library Css -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/libraries/lib.css">
+
+    <!-- Font Icons -->
+    <!--link rel="stylesheet" type="text/css" href="libraries/fonts/open-iconic-bootstrap.min.css"-->
+
+    <!-- Custom - Common CSS -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/navigation-menu.css">
+
+    <!-- Custom - Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/shortcodes.css">
+    
+    <script>
+(function(i,s,o,g,r,a,m){
+  i['GoogleAnalyticsObject']=r;
+  i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},
+  i[r].l=1*new Date();
+  a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+  a.async=1;
+  a.src=g;
+  m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-130651341-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <!--[if lt IE 9]>
+        <script src="%PUBLIC_URL%/js/html5/respond.min.js"></script>
+    <![endif]-->
+    <title>Mi pecera</title>
+  </head>
+  <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="%PUBLIC_URL%/js/jquery.min.js"></script>
+
+    <script src="%PUBLIC_URL%/libraries/lib.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script src="%PUBLIC_URL%/js/functions.js"></script>
+  </body>
+</html>
