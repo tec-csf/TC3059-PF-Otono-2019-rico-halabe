@@ -184,7 +184,32 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
 * Formato JSON de la respuesta:
-
+```json
+[
+    {
+        "id": 1,
+        "name": "Agua Dulce",
+        "water_type": "sweet",
+        "material": "water",
+        "description": "Pequeño Ecosistema creado para albergar peces que normalmente encontraríamos en ríos, lagos y lagunas de todo el mundo.\nConsta de lo siguiente:\nAcuario con sistema de filtración.\nMueble o gabinete para acuario.\nSustrato o grava natural.\nDecoración (artificial o natural).\nTapa con iluminación.\nPeces Tropicales.",
+        "created_at": "2019-02-07 20:47:33",
+        "updated_at": "2019-02-07 20:47:33",
+        "img": "http://api.pecerasgratis.com/Peceras/MT50/Agua.png",
+        "preview": "http://api.pecerasgratis.com/preview/Agua/dulce.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Agua Salada",
+        "water_type": "salty",
+        "material": "water",
+        "description": "Este Ecosistema por su complejidad Biológica puede albergar una cantidad menor de peces a diferencia del de agua dulce; pero se ve compensado por la belleza de los mismos.\nConsta de lo siguiente:\nAcuario con sistema de Filtración.\nMueble o gabinete para acuario.\nAragonita como sustrato.\nPiedra base como decoración y base biológica.\nSistemas de filtración especiales para mantener un acuario sano y sin problemas.\nTapa con iluminación.\nPeces Marinos.",
+        "created_at": "2019-02-07 20:47:33",
+        "updated_at": "2019-02-07 20:47:33",
+        "img": "http://api.pecerasgratis.com/Peceras/MT50/Agua.png",
+        "preview": "http://api.pecerasgratis.com/preview/Agua/salada.jpeg"
+    }
+]
+```
 
 #### Get Decoration: 
 * Descripción: Regresa {{Plant | Rock} y depende del tipo de agua guardado en la session y parámetro de GET.
