@@ -145,118 +145,136 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 #### 3.5.2 Framework
 #### 3.5.3 Librerías de funciones o dependencias
 
-
 #### Get Tanks: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Regresa todos los tanques con propiedades e imagenes.
+* URL: http://api.pecerasgratis.com/api/materials/tanks
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Formato JSON de la respuesta: 
+```json
+{
+        "id": 1,
+        "name": "MT-50",
+        "capacity": 80,
+        "width": 45,
+        "height": 50,
+        "depth": 50,
+        "fish_sweet": 14,
+        "fish_salty": 3,
+        "medium_ornaments": 1,
+        "big_ornaments": 0,
+        "color": "Negro o Plata",
+        "cabinet": 0,
+        "created_at": "2019-02-07 20:47:33",
+        "updated_at": "2019-02-07 20:47:33",
+        "img": "http://api.pecerasgratis.com/Peceras/MT50/Pecera.png",
+        "preview": "http://api.pecerasgratis.com/preview/Peceras/MT50.png"
+    }
+```
 
 #### Get Basic Materials: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP: **GET**
+* Headers:
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Formato JSON de la respuesta:
 
 #### Get Decoration: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP: **GET**
+* Headers:
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Formato JSON de la respuesta:
 
 #### Get Fish: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP: **GET**
+* Headers:
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Formato JSON de la respuesta:
 
 #### Get Packages: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP: **GET**
+* Headers:
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Formato JSON de la respuesta:
 
 #### Get Price: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP: **GET**
+* Headers:
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Formato JSON de la respuesta:
 
 #### Set Client Info: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP:
+* Headers:
+* Formato JSON del cuerpo de la solicitud: 
+* Formato JSON de la respuesta:
 
 #### Create Session: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP:
+* Headers:
+* Formato JSON del cuerpo de la solicitud: 
+* Formato JSON de la respuesta:
 
 #### Show Session: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP:
+* Headers:
+* Formato JSON del cuerpo de la solicitud: 
+* Formato JSON de la respuesta:
 
 #### Update Session: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP:
+* Headers:
+* Formato JSON del cuerpo de la solicitud: 
+* Formato JSON de la respuesta:
 
 #### Delete Session: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
-
-#### Get Price from Liters: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripci**:
+* L:
+* rbos HP:
+aders:
+* rto ON del cuerpo de la solicitud**
+* rmato JSOde la respuesta**### Get Price from Liters: 
+Descripción*** URL:
+* Verbos HTTP:
+* Headers:
+* Formato JSON del cuerpo de la solicitud: 
+* Formato JSON de la respuesta:
 
 #### Send Mail: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP:
+* Headers:
+* Formato JSON del cuerpo de la solicitud: 
+* Formato JSON de la respuesta:
 
 #### Add to Newsletter: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción:
+* URL:
+* Verbos HTTP:
+* Headers:
+* Formato JSON del cuerpo de la solicitud: 
+* Formato JSON de la respuesta:
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
 
