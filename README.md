@@ -139,16 +139,14 @@ Laravel
 
 ### 3.5 API
 
-*[Incluya aquí una explicación de la solución utilizada para implementar la API del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+La implementación de las APIs que utiliza la aplicación se basa en un API Manager por parte de Google Cloud. Debido a la integración que mantiene la plataforma de nube de Google cloud con respecto a los APIs y los contenedores donde se encontrarán las aplicaciones que hagan uso de los mismos APIs. 
 
 #### 3.5.1 Lenguaje de programación
 #### 3.5.2 Framework
 #### 3.5.3 Librerías de funciones o dependencias
 
-*[Incluya aquí una explicación de cada uno de los endpoints que forman parte de la API. Cada endpoint debe estar correctamente documentado.]*
 
-*[Por cada endpoint debe incluir lo siguiente:]*
-
+#### Get Tanks: 
 * **Descripción**:
 * **URL**:
 * **Verbos HTTP**:
@@ -156,6 +154,109 @@ Laravel
 * **Formato JSON del cuerpo de la solicitud**: 
 * **Formato JSON de la respuesta**:
 
+#### Get Basic Materials: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Get Decoration: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Get Fish: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Get Packages: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Get Price: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Set Client Info: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Create Session: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Show Session: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Update Session: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Delete Session: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Get Price from Liters: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Send Mail: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
+
+#### Add to Newsletter: 
+* **Descripción**:
+* **URL**:
+* **Verbos HTTP**:
+* **Headers**:
+* **Formato JSON del cuerpo de la solicitud**: 
+* **Formato JSON de la respuesta**:
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
 
