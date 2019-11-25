@@ -66,8 +66,9 @@ Las herramientas que se utilizan para poder implementar estos tres sectores menc
 En el caso específico de este proyecto la herramienta propuesta lleva a cabo las siguientes funciones de planificación para la empresa que la utiliza:
 
 1. Ventas de peceras.
-2. Modificación de peceras por parte de los clientes.
+2. Modificación y configuración de peceras por parte de los clientes.
 3. Control de ventas de peceras por parte del backend.
+4. Información de peceras.
 
 ## 3. Solución
 
@@ -85,23 +86,52 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.3 Frontend
 
-Para la solución de frontend, la herramienta esta desarrollada principalmente en Javascript utilizando VueJS. El Framework de VueJs es uno de los más utilizados en años recientes debido a la facilidad que ofrece para poder crear interfaces de usuario. Esta solución es adecuada para plataformas con un enfasis en simplicidad y usabilidad con su habilidad de crear aplicaciones de "una página" y cuentan con flexibilidad para la integración de extensas librerías.
+Para la solución de frontend, la herramienta esta desarrollada principalmente en Javascript utilizando ReactJS. El Framework de ReactJS es uno de los más utilizados en años recientes debido a la facilidad que ofrece para poder crear interfaces de usuario. Esta solución es adecuada para plataformas con un enfasis en simplicidad y usabilidad con su habilidad de crear aplicaciones de "una página" y cuentan con flexibilidad para la integración de extensas librerías. Como se describió anteriormente, la aplicación de ReactJS reside en un contenedor de Docker que es controlado con el uso de Kubernetes y así conectado con la plataforma de GCP.
 
 #### 3.3.1 Lenguaje de programación
-Javascript
+Javascript principalmente
 #### 3.3.2 Framework
-VueJS
+ReactJS
 #### 3.3.3 Librerías de funciones o dependencias
+
+* axios: 0.18.0
+* google-map-react: 1.0.9
+* rc-progress: 2.2.6
+* react: 16.5.2
+* react-dnd: 5.0.0
+* react-dnd-html5-backend: 5.0.1
+* react-dom: 16.5.2
+* react-iframe: 1.3.3
+* react-scripts: 2.1.3
+* react-tabs: 2.3.0
 
 ### 3.4 Backend
 
-*[Incluya aquí una explicación de la solución utilizada para el backend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+Para la solución de Backend se utilizó la herramienta de Laravel. Laravel presenta un elegante framework para web que permite tener un desarrollo basado en PHP pero mantiene un tipo de boilerplate o templates básicos reduciendo la complejidad para acciones comúnes como:
+
+* Autenticación
+* Ruteo
+* Sesiones
+* Cacheo
+
+Esta herramienta permite que el desarrollo por parte del backend sea más sencillo y una vez teniendo los elementos conectados, el control que se tiene como resultado es lo que ayuda a mantener Laravel como herramienta principal de backend. De la misma manera que se utiliza el contenedor de Docker y orquestación de Kubernetes como se hizo con el front-end, se usa para esta solución.
 
 #### 3.4.1 Lenguaje de programación
-PHP
+PHP principalmente
 #### 3.4.2 Framework
 Laravel
 #### 3.4.3 Librerías de funciones o dependencias
+* axios: 0.18
+* bootstrap: 4.0.0
+* cross-env: 5.1
+* jquery: 3.2
+* laravel-mix: 4.0.7
+* lodash: 4.17.5
+* popper.js: 1.12
+* resolve-url-loader: 2.3.1
+* sass: 1.15.2
+* sass-loader: 7.1.0
+* vue: 2.5.17
 
 ### 3.5 API
 
@@ -129,4 +159,7 @@ Laravel
 
 ## 4. Referencias
 
-*[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+Algunos sitios de interés para el desarrollo y uso de esta implementación.
+
+* React JS: https://reactjs.org/docs/getting-started.html
+* Laravel: https://laravel.com/docs/6.x
