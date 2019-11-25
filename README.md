@@ -80,21 +80,23 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 * Front-End:
     1. Usuario tiene interacción con la aplicación de React (Front).
     2. La aplicación de React interactua con el Storage para utilizar las imagenes de las peceras, las cuales son regresadas mediante el uso de las APIs (Cloud Endpoints)
-    3. Cloud Endpoints Alimenta la base de datos y estos cambios se ven registrados dependiendo del llamado.
+    3. Cloud Endpoints Alimenta la base de datos por medio de la lógica del backend y estos cambios se ven registrados dependiendo del llamado.
 * Back-End:
-    1. Usuario tiene interacción con la aplicación de Laravel (Back).
+    1. Usuario tiene interacción con la aplicación de Laravel como portal para admins (Back).
     2. La aplicación de Laravel mantiene el control de la base de datos para la correcta interacción con el resto del sistema.
+    3. Se enseña la información en el portal de Administrador.
 
 ### 3.2 Descripción de los componentes
 
 * *Usuarios* : Componente que representa a los usuarios que ingresan a la página por parte del portal donde pueden llevar a cabo las funciones regulares de modificación y compra de peceras.
 * *Admin* : Es el componente que al igual que los usuarios representa el punto de acceso pero este es de el administrador del Laravel (backend).
-* *FrontEnd* : El componente representativo de la aplicación de ReactJS, de vista del usuario.
-* *BackEnd* : Componente representativo de la aplicación de Laravel en PHP para la administración detrás de lo que se tiene adelante.
+* *Portal de usuarios* : El componente representativo de la aplicación de ReactJS, de vista del usuario.
+* *Portal de admin* : Componente representativo de la aplicación de Laravel en PHP para la administración detrás de lo que se tiene adelante.
 * *Cloud Endpoints* : Representativo del servicio de los APIs de esta aplicación.
 * *Cloud Storage* : Bucket de almacenamiento para guardar elementos estáticos como las imagenes de las peceras en este caso.
 * *Data Base* : Base de datos propia de la aplicación en SQL.
-* *GCP*: Término general del sistema de Google Cloud Plataform donde se albergan los clusters de Kubernetes y los demás elementos.
+* *GCP* : Término general del sistema de Google Cloud Plataform donde se albergan los clusters de Kubernetes y los demás elementos.
+* *Backend* : Lógica que tiene detrás la aplicación y que conecta las APIs con la base de datos y genera la información pertinente para la aplicación.
 
 ### 3.3 Frontend
 
