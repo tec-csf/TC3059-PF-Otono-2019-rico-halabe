@@ -89,6 +89,7 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 * *Cloud Endpoints* : Representativo del servicio de los APIs de esta aplicación.
 * *Cloud Storage* : Bucket de almacenamiento para guardar elementos estáticos como las imagenes de las peceras en este caso.
 * *Data Base* : Base de datos propia de la aplicación en SQL.
+* *GCP*: Término general del sistema de Google Cloud Plataform donde se albergan los clusters de Kubernetes y los demás elementos.
 
 ### 3.3 Frontend
 
