@@ -1,4 +1,4 @@
-# *[Poner aquí el Título del Proyecto]*
+# Implementación de PecerasGratis en GCP
 ---
 #### Materia: Desarrollo de Aplicaciones en la Nube
 
@@ -55,16 +55,19 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 ## 2. Descripción del proyecto
 
-El proyecto que se estará implementando a la plataforma de la nube es una plataforma de ERP orientada para el uso de un despacho de arquitectos de interiores. El ERP o Enterprise Resource Planning regularmente son conformados por herramientas de información para llevar un control gerencial donde se integra y maneja la planificación de una empresa. Para este ERP en específico se utilizan tres herramientas populares en el desarrollo web:
+El proyecto que se estará implementando a la plataforma de la nube es un sitio web de control de una empresa orientada a la venta de peceras. Este proyecto presenta una interesante situación que puede ser adaptada a la plataforma de la nube sin ser un proyecto de un tamaño que no se pueda considerar para este tiempo de implementación. Este proyecto utiliza de tres principales aplicaciones, una de front-end, una de back-end y los servicios apis para el correcto funcionamiento. 
 
-* VueJS
-* Laravel
-* SQL
+Las herramientas que se utilizan para poder implementar estos tres sectores mencionados anteriormente son los siguientes:
 
-En el caso específico de este proyecto la herramienta propuesta lleva a cabo las siguientes funciones de planificación para el despacho que la utiliza:
-1. 
+* *Front-End* : React JS
+* *Back-End* : Laravel
+* *Base de Datos* : SQL
 
+En el caso específico de este proyecto la herramienta propuesta lleva a cabo las siguientes funciones de planificación para la empresa que la utiliza:
 
+1. Ventas de peceras.
+2. Modificación de peceras por parte de los clientes.
+3. Control de ventas de peceras por parte del backend.
 
 ## 3. Solución
 
