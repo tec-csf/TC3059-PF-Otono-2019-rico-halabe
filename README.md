@@ -227,20 +227,50 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 * Formato JSON de la respuesta:
 
 #### Set Client Info: 
-* Descripción:
-* URL:
-* Verbos HTTP:
+* Descripción: Actualiza información del cliente
+* URL: http://api.pecerasgratis.com/api/client_info
+* Verbos HTTP: **POST**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
+```json
+{
+	"uid": "sRQ5UDW7WN",
+	"first_name": "Isaac",
+	"phone_number": "123456789",
+	"email": "isaac@kimosolutions.com"
+}
+```
 * Formato JSON de la respuesta:
+```json
+{
+    "Description": "Client saved successfully",
+    "Status": 0
+}
+```
 
 #### Create Session: 
-* Descripción:
-* URL:
-* Verbos HTTP:
+* Descripción: Crea una sesión con un ID requerido
+* URL: http://api.pecerasgratis.com/api/session/create
+* Verbos HTTP: **POST**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
+```json
+{
+	"uid": "abc"
+}
+```
 * Formato JSON de la respuesta:
+```json
+{
+    "Status": "Success",
+    "Message": "Session with UID: abc successfully created",
+    "UID": "abc"
+}
+```
 
 #### Show Session: 
 * Descripción:
@@ -251,6 +281,28 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 * Formato JSON de la respuesta:
 
 #### Update Session: 
+* Descripción: Actualiza y valida los valores de la sesión con un ID requerido.
+* URL: http://api.pecerasgratis.com/api/session/update
+* Verbos HTTP: **PUT**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+``` json
+{
+	"uid": "abc",
+	"tank_id": 1
+}
+```
+* Formato JSON de la respuesta:
+``` json
+{
+    "Status": "Success",
+    "Message": "Session with UID: abc successfully updated"
+}
+```
+
+#### Delete Session: 
 * Descripción:
 * URL:
 * Verbos HTTP:
@@ -258,15 +310,10 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 * Formato JSON del cuerpo de la solicitud: 
 * Formato JSON de la respuesta:
 
-#### Delete Session: 
-* Descripci**:
-* L:
-* rbos HP:
-aders:
-* rto ON del cuerpo de la solicitud**
-* rmato JSOde la respuesta**### Get Price from Liters: 
-Descripción*** URL:
-* Verbos HTTP:
+### Get Price from Liters: 
+* Descripción:
+* URL:
+* Verbos HTTP: **POST**
 * Headers:
 * Formato JSON del cuerpo de la solicitud: 
 * Formato JSON de la respuesta:
