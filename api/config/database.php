@@ -46,7 +46,7 @@ return [
             'database' => env('DB_DATABASE', 'mipecera'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
+            'unix_socket' => env('DB_SOCKET', '/cloudsql/final-project-cloud-apps:us-central1:mipecera'),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
