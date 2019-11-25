@@ -176,42 +176,53 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 ```
 
 #### Get Basic Materials: 
-* Descripción:
-* URL:
+* Descripción: Regresa {Water | Floor} depende del parametro de GET y tamaño depende del tanque guardado en la sesión.
+* URL: http://api.pecerasgratis.com/api/materials/basic_materials/abc/water
 * Verbos HTTP: **GET**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
 * Formato JSON de la respuesta:
 
+
 #### Get Decoration: 
-* Descripción:
-* URL:
+* Descripción: Regresa {{Plant | Rock} y depende del tipo de agua guardado en la session y parámetro de GET.
+* URL: http://api.pecerasgratis.com/api/materials/decoration/abc/ornament
 * Verbos HTTP: **GET**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
 * Formato JSON de la respuesta:
 
 #### Get Fish: 
-* Descripción:
-* URL:
+* Descripción: Regresa los peces dependiendo del tamaño de tanque guardado y tipo dependiendo de tipo de agua.
+* URL: http://api.pecerasgratis.com/api/materials/fish/abc
 * Verbos HTTP: **GET**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
 * Formato JSON de la respuesta:
 
 #### Get Packages: 
-* Descripción:
-* URL:
+* Descripción: Regresa todos los paquetes de decoración dependiendo de los valores de tamaño y agua guardados.
+* URL: http://api.pecerasgratis.com/api/packages/abc
 * Verbos HTTP: **GET**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
 * Formato JSON de la respuesta:
 
 #### Get Price: 
-* Descripción:
-* URL:
+* Descripción: Regresa precios de venta y mantenimiento o renta dependiendo de materiales guardados en la sesión.
+* URL: http://api.pecerasgratis.com/api/price/abc
 * Verbos HTTP: **GET**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
 * Formato JSON de la respuesta:
 
