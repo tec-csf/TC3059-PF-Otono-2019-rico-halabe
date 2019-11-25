@@ -298,10 +298,12 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 ```
 
 #### Show Session: 
-* Descripción:
+* Descripción: Regresa todos los valores de una sesión con su ID.
 * URL:
-* Verbos HTTP:
+* Verbos HTTP: **GET**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
 * Formato JSON de la respuesta:
 
@@ -328,10 +330,12 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 ```
 
 #### Delete Session: 
-* Descripción:
+* Descripción: Destruye una sesión guardada con un ID de sesión requerido
 * URL:
-* Verbos HTTP:
+* Verbos HTTP: **DEL**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
 * Formato JSON de la respuesta:
 
@@ -340,22 +344,28 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 * URL:
 * Verbos HTTP: **POST**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
 * Formato JSON de la respuesta:
 
 #### Send Mail: 
-* Descripción:
+* Descripción: Enviar correo a la plataforma por parte del correo ingresado
 * URL:
-* Verbos HTTP:
+* Verbos HTTP: **GET**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
 * Formato JSON de la respuesta:
 
 #### Add to Newsletter: 
-* Descripción:
+* Descripción: Añadir a la newsletter al usuario por el correo ingresado.
 * URL:
-* Verbos HTTP:
+* Verbos HTTP: **GET**
 * Headers:
+    * Content-Type: application/json
+    * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
 * Formato JSON de la respuesta:
 
