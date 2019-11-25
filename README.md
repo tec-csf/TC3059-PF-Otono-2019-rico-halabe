@@ -1,6 +1,6 @@
 # Implementación de PecerasGratis en GCP
 ---
-#### Materia: Desarrollo de Aplicaciones en la Nube
+#### Materia: TC3059 Desarrollo de Aplicaciones en la Nube
 
 ##### Campus: Santa Fe
 
@@ -76,7 +76,7 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.1 Arquitectura de la solución
 
-*[Incluya aquí un diagrama donde se aprecie la arquitectura de la solución propuesta, así como la interacción entre los diferentes componentes de la misma.]*
+![Arquitectura Peseras](./docs/arquitectura.png)
 
 *[Incluya una explicación del flujo de la información entre los diferentes componentes.]*
 
@@ -153,7 +153,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Formato JSON de la respuesta: 
+* Respuesta: 
 ```json
 {
         "id": 1,
@@ -183,7 +183,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Formato JSON de la respuesta:
+* Respuesta:
 ```json
 [
     {
@@ -219,7 +219,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Formato JSON de la respuesta:
+* Respuesta: 
 
 #### Get Fish: 
 * Descripción: Regresa los peces dependiendo del tamaño de tanque guardado y tipo dependiendo de tipo de agua.
@@ -229,7 +229,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Formato JSON de la respuesta:
+* Respuesta:
 
 #### Get Packages: 
 * Descripción: Regresa todos los paquetes de decoración dependiendo de los valores de tamaño y agua guardados.
@@ -239,7 +239,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Formato JSON de la respuesta:
+* Respuesta:
 
 #### Get Price: 
 * Descripción: Regresa precios de venta y mantenimiento o renta dependiendo de materiales guardados en la sesión.
@@ -249,7 +249,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Formato JSON de la respuesta:
+* Respuesta:
 
 #### Set Client Info: 
 * Descripción: Actualiza información del cliente
@@ -267,7 +267,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 	"email": "isaac@kimosolutions.com"
 }
 ```
-* Formato JSON de la respuesta:
+* Respuesta:
 ```json
 {
     "Description": "Client saved successfully",
@@ -288,7 +288,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 	"uid": "abc"
 }
 ```
-* Formato JSON de la respuesta:
+* Respuesta:
 ```json
 {
     "Status": "Success",
@@ -305,7 +305,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
-* Formato JSON de la respuesta:
+* Respuesta:
 
 #### Update Session: 
 * Descripción: Actualiza y valida los valores de la sesión con un ID requerido.
@@ -321,7 +321,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 	"tank_id": 1
 }
 ```
-* Formato JSON de la respuesta:
+* Respuesta:
 ``` json
 {
     "Status": "Success",
@@ -337,7 +337,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
-* Formato JSON de la respuesta:
+* Respuesta:
 
 ### Get Price from Liters: 
 * Descripción:
@@ -347,7 +347,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
-* Formato JSON de la respuesta:
+* Respuesta:
 
 #### Send Mail: 
 * Descripción: Enviar correo a la plataforma por parte del correo ingresado
@@ -357,7 +357,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
-* Formato JSON de la respuesta:
+* Respuesta:
 
 #### Add to Newsletter: 
 * Descripción: Añadir a la newsletter al usuario por el correo ingresado.
@@ -367,7 +367,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
-* Formato JSON de la respuesta:
+* Respuesta:
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
 
