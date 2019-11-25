@@ -82,13 +82,13 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.2 Descripción de los componentes
 
-* *Usuarios* :
-* *Admin* :
-* *FrontEnd* :
-* *BackEnd* :
-* *Cloud Endpoints* :
-* *Cloud Storage* :
-* *Data Base* :
+* *Usuarios* : Componente que representa a los usuarios que ingresan a la página por parte del portal donde pueden llevar a cabo las funciones regulares de modificación y compra de peceras.
+* *Admin* : Es el componente que al igual que los usuarios representa el punto de acceso pero este es de el administrador del Laravel (backend).
+* *FrontEnd* : El componente representativo de la aplicación de ReactJS, de vista del usuario.
+* *BackEnd* : Componente representativo de la aplicación de Laravel en PHP para la administración detrás de lo que se tiene adelante.
+* *Cloud Endpoints* : Representativo del servicio de los APIs de esta aplicación.
+* *Cloud Storage* : Bucket de almacenamiento para guardar elementos estáticos como las imagenes de las peceras en este caso.
+* *Data Base* : Base de datos propia de la aplicación en SQL.
 
 ### 3.3 Frontend
 
