@@ -86,6 +86,8 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.3 Frontend
 
+![React Logo](./docs/react_logo.png)
+
 Para la solución de frontend, la herramienta esta desarrollada principalmente en Javascript utilizando ReactJS. El Framework de ReactJS es uno de los más utilizados en años recientes debido a la facilidad que ofrece para poder crear interfaces de usuario. Esta solución es adecuada para plataformas con un enfasis en simplicidad y usabilidad con su habilidad de crear aplicaciones de "una página" y cuentan con flexibilidad para la integración de extensas librerías. Como se describió anteriormente, la aplicación de ReactJS reside en un contenedor de Docker que es controlado con el uso de Kubernetes y así conectado con la plataforma de GCP.
 
 #### 3.3.1 Lenguaje de programación
@@ -106,6 +108,8 @@ ReactJS
 * react-tabs: 2.3.0
 
 ### 3.4 Backend
+
+![Laravel Logo](./docs/laravel_logo.jpg)
 
 Para la solución de Backend se utilizó la herramienta de Laravel. Laravel presenta un elegante framework para web que permite tener un desarrollo basado en PHP pero mantiene un tipo de boilerplate o templates básicos reduciendo la complejidad para acciones comúnes como:
 
