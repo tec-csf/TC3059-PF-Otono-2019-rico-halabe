@@ -1,6 +1,6 @@
 # Implementación de PecerasGratis en GCP
 ---
-#### Materia: Desarrollo de Aplicaciones en la Nube
+#### Materia: TC3059 Desarrollo de Aplicaciones en la Nube
 
 ##### Campus: Santa Fe
 
@@ -35,7 +35,6 @@ El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos p
     - api			      # Carpeta con la solución de la API
     - datasets		  # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
     - dbs			      # Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
-    - models			  # Carpeta donde se almacenarán los modelos de Machine Learning ya entrenados
     - docs			    # Carpeta con la documentación del proyecto
 ```
 
@@ -76,13 +75,26 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.1 Arquitectura de la solución
 
-*[Incluya aquí un diagrama donde se aprecie la arquitectura de la solución propuesta, así como la interacción entre los diferentes componentes de la misma.]*
+![Arquitectura Peseras](./docs/arquitectura.png)
 
-*[Incluya una explicación del flujo de la información entre los diferentes componentes.]*
+* Front-End:
+    1. Usuario tiene interacción con la aplicación de React (Front).
+    2. La aplicación de React interactua con el Storage para utilizar las imagenes de las peceras, las cuales son regresadas mediante el uso de las APIs (Cloud Endpoints)
+    3. Cloud Endpoints Alimenta la base de datos y estos cambios se ven registrados dependiendo del llamado.
+* Back-End:
+    1. Usuario tiene interacción con la aplicación de Laravel (Back).
+    2. La aplicación de Laravel mantiene el control de la base de datos para la correcta interacción con el resto del sistema.
 
 ### 3.2 Descripción de los componentes
 
-*[Incluya aquí una descripción detallada de cada uno de los componentes de la arquitectura así como una justificación de la selección de cada componente]*
+* *Usuarios* : Componente que representa a los usuarios que ingresan a la página por parte del portal donde pueden llevar a cabo las funciones regulares de modificación y compra de peceras.
+* *Admin* : Es el componente que al igual que los usuarios representa el punto de acceso pero este es de el administrador del Laravel (backend).
+* *FrontEnd* : El componente representativo de la aplicación de ReactJS, de vista del usuario.
+* *BackEnd* : Componente representativo de la aplicación de Laravel en PHP para la administración detrás de lo que se tiene adelante.
+* *Cloud Endpoints* : Representativo del servicio de los APIs de esta aplicación.
+* *Cloud Storage* : Bucket de almacenamiento para guardar elementos estáticos como las imagenes de las peceras en este caso.
+* *Data Base* : Base de datos propia de la aplicación en SQL.
+* *GCP*: Término general del sistema de Google Cloud Plataform donde se albergan los clusters de Kubernetes y los demás elementos.
 
 ### 3.3 Frontend
 
@@ -145,118 +157,229 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 #### 3.5.2 Framework
 #### 3.5.3 Librerías de funciones o dependencias
 
-
 #### Get Tanks: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Regresa todos los tanques con propiedades e imagenes.
+* URL: http://api.pecerasgratis.com/api/materials/tanks
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta: 
+```json
+{
+        "id": 1,
+        "name": "MT-50",
+        "capacity": 80,
+        "width": 45,
+        "height": 50,
+        "depth": 50,
+        "fish_sweet": 14,
+        "fish_salty": 3,
+        "medium_ornaments": 1,
+        "big_ornaments": 0,
+        "color": "Negro o Plata",
+        "cabinet": 0,
+        "created_at": "2019-02-07 20:47:33",
+        "updated_at": "2019-02-07 20:47:33",
+        "img": "http://api.pecerasgratis.com/Peceras/MT50/Pecera.png",
+        "preview": "http://api.pecerasgratis.com/preview/Peceras/MT50.png"
+    }
+```
 
 #### Get Basic Materials: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Regresa {Water | Floor} depende del parametro de GET y tamaño depende del tanque guardado en la sesión.
+* URL: http://api.pecerasgratis.com/api/materials/basic_materials/abc/water
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta:
+```json
+[
+    {
+        "id": 1,
+        "name": "Agua Dulce",
+        "water_type": "sweet",
+        "material": "water",
+        "description": "Pequeño Ecosistema creado para albergar peces que normalmente encontraríamos en ríos, lagos y lagunas de todo el mundo.\nConsta de lo siguiente:\nAcuario con sistema de filtración.\nMueble o gabinete para acuario.\nSustrato o grava natural.\nDecoración (artificial o natural).\nTapa con iluminación.\nPeces Tropicales.",
+        "created_at": "2019-02-07 20:47:33",
+        "updated_at": "2019-02-07 20:47:33",
+        "img": "http://api.pecerasgratis.com/Peceras/MT50/Agua.png",
+        "preview": "http://api.pecerasgratis.com/preview/Agua/dulce.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Agua Salada",
+        "water_type": "salty",
+        "material": "water",
+        "description": "Este Ecosistema por su complejidad Biológica puede albergar una cantidad menor de peces a diferencia del de agua dulce; pero se ve compensado por la belleza de los mismos.\nConsta de lo siguiente:\nAcuario con sistema de Filtración.\nMueble o gabinete para acuario.\nAragonita como sustrato.\nPiedra base como decoración y base biológica.\nSistemas de filtración especiales para mantener un acuario sano y sin problemas.\nTapa con iluminación.\nPeces Marinos.",
+        "created_at": "2019-02-07 20:47:33",
+        "updated_at": "2019-02-07 20:47:33",
+        "img": "http://api.pecerasgratis.com/Peceras/MT50/Agua.png",
+        "preview": "http://api.pecerasgratis.com/preview/Agua/salada.jpeg"
+    }
+]
+```
 
 #### Get Decoration: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Regresa {{Plant | Rock} y depende del tipo de agua guardado en la session y parámetro de GET.
+* URL: http://api.pecerasgratis.com/api/materials/decoration/abc/ornament
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta: 
 
 #### Get Fish: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Regresa los peces dependiendo del tamaño de tanque guardado y tipo dependiendo de tipo de agua.
+* URL: http://api.pecerasgratis.com/api/materials/fish/abc
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta:
 
 #### Get Packages: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Regresa todos los paquetes de decoración dependiendo de los valores de tamaño y agua guardados.
+* URL: http://api.pecerasgratis.com/api/packages/abc
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta:
 
 #### Get Price: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Regresa precios de venta y mantenimiento o renta dependiendo de materiales guardados en la sesión.
+* URL: http://api.pecerasgratis.com/api/price/abc
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta:
 
 #### Set Client Info: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Actualiza información del cliente
+* URL: http://api.pecerasgratis.com/api/client_info
+* Verbos HTTP: **POST**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+```json
+{
+	"uid": "sRQ5UDW7WN",
+	"first_name": "Isaac",
+	"phone_number": "123456789",
+	"email": "isaac@kimosolutions.com"
+}
+```
+* Respuesta:
+```json
+{
+    "Description": "Client saved successfully",
+    "Status": 0
+}
+```
 
 #### Create Session: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Crea una sesión con un ID requerido
+* URL: http://api.pecerasgratis.com/api/session/create
+* Verbos HTTP: **POST**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+```json
+{
+	"uid": "abc"
+}
+```
+* Respuesta:
+```json
+{
+    "Status": "Success",
+    "Message": "Session with UID: abc successfully created",
+    "UID": "abc"
+}
+```
 
 #### Show Session: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Regresa todos los valores de una sesión con su ID.
+* URL:
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+* Respuesta:
 
 #### Update Session: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Actualiza y valida los valores de la sesión con un ID requerido.
+* URL: http://api.pecerasgratis.com/api/session/update
+* Verbos HTTP: **PUT**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+``` json
+{
+	"uid": "abc",
+	"tank_id": 1
+}
+```
+* Respuesta:
+``` json
+{
+    "Status": "Success",
+    "Message": "Session with UID: abc successfully updated"
+}
+```
 
 #### Delete Session: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Destruye una sesión guardada con un ID de sesión requerido
+* URL:
+* Verbos HTTP: **DEL**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+* Respuesta:
 
-#### Get Price from Liters: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+### Get Price from Liters: 
+* Descripción:
+* URL:
+* Verbos HTTP: **POST**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+* Respuesta:
 
 #### Send Mail: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Enviar correo a la plataforma por parte del correo ingresado
+* URL:
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+* Respuesta:
 
 #### Add to Newsletter: 
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+* Descripción: Añadir a la newsletter al usuario por el correo ingresado.
+* URL:
+* Verbos HTTP: **GET**
+* Headers:
+    * Content-Type: application/json
+    * Auth: Token
+* Formato JSON del cuerpo de la solicitud: 
+* Respuesta:
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
 
