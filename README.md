@@ -35,7 +35,6 @@ El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos p
     - api			      # Carpeta con la solución de la API
     - datasets		  # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
     - dbs			      # Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
-    - models			  # Carpeta donde se almacenarán los modelos de Machine Learning ya entrenados
     - docs			    # Carpeta con la documentación del proyecto
 ```
 
@@ -78,7 +77,13 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ![Arquitectura Peseras](./docs/arquitectura.png)
 
-*[Incluya una explicación del flujo de la información entre los diferentes componentes.]*
+* Front-End:
+    1. Usuario tiene interacción con la aplicación de React (Front).
+    2. La aplicación de React interactua con el Storage para utilizar las imagenes de las peceras, las cuales son regresadas mediante el uso de las APIs (Cloud Endpoints)
+    3. Cloud Endpoints Alimenta la base de datos y estos cambios se ven registrados dependiendo del llamado.
+* Back-End:
+    1. Usuario tiene interacción con la aplicación de Laravel (Back).
+    2. La aplicación de Laravel mantiene el control de la base de datos para la correcta interacción con el resto del sistema.
 
 ### 3.2 Descripción de los componentes
 
