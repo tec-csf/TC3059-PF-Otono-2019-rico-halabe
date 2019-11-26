@@ -156,6 +156,7 @@ Laravel
 La implementación de las APIs que utiliza la aplicación se basa en un API Manager por parte de Google Cloud. Debido a la integración que mantiene la plataforma de nube de Google cloud con respecto a los APIs y los contenedores donde se encontrarán las aplicaciones que hagan uso de los mismos APIs. 
 
 #### 3.5.1 Lenguaje de programación
+JSON
 #### 3.5.2 Framework
 #### 3.5.3 Librerías de funciones o dependencias
 
@@ -233,7 +234,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Respuesta: 
+* Respuesta: JSON con la decoración relacionada con el tipo de agua de la sesión
 
 #### Get Fish: 
 * Descripción: Regresa los peces dependiendo del tamaño de tanque guardado y tipo dependiendo de tipo de agua.
@@ -243,7 +244,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Respuesta:
+* Respuesta: JSON con los peces que dependen del tamaño del tanque y tipo de agua.
 
 #### Get Packages: 
 * Descripción: Regresa todos los paquetes de decoración dependiendo de los valores de tamaño y agua guardados.
@@ -253,7 +254,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Respuesta:
+* Respuesta: JSON con los paquetes de decoración.
 
 #### Get Price: 
 * Descripción: Regresa precios de venta y mantenimiento o renta dependiendo de materiales guardados en la sesión.
@@ -263,7 +264,7 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: *No aplica* 
-* Respuesta:
+* Respuesta: JSON con los precios de venta dependiendo de todos los materiales guardados.
 
 #### Set Client Info: 
 * Descripción: Actualiza información del cliente
@@ -313,13 +314,13 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 
 #### Show Session: 
 * Descripción: Regresa todos los valores de una sesión con su ID.
-* URL:
+* URL: https://api.pecerasgratis.com/api/session/show/abc
 * Verbos HTTP: **GET**
 * Headers:
     * Content-Type: application/json
     * Auth: Token
-* Formato JSON del cuerpo de la solicitud: 
-* Respuesta:
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta: JSON con todos los elementos de la sesión seleccionada con el ID.
 
 #### Update Session: 
 * Descripción: Actualiza y valida los valores de la sesión con un ID requerido.
@@ -345,47 +346,45 @@ La implementación de las APIs que utiliza la aplicación se basa en un API Mana
 
 #### Delete Session: 
 * Descripción: Destruye una sesión guardada con un ID de sesión requerido
-* URL:
+* URL: http://api.pecerasgratis.com/api/session/destroy
 * Verbos HTTP: **DEL**
 * Headers:
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
-* Respuesta:
+* Respuesta: JSON con la respuesta de la sesiíon eliminada.
 
 ### Get Price from Liters: 
-* Descripción:
-* URL:
+* Descripción: Regresa el precio de los litros de agua.
+* URL: http://api.pecerasgratis.com/api/price/by_liters
 * Verbos HTTP: **POST**
 * Headers:
     * Content-Type: application/json
     * Auth: Token
 * Formato JSON del cuerpo de la solicitud: 
-* Respuesta:
+* Respuesta: JSON con los precios requeridos por litros.
 
 #### Send Mail: 
 * Descripción: Enviar correo a la plataforma por parte del correo ingresado
-* URL:
+* URL: http://api.pecerasgratis.com/api/session/confirm/sRQ5UDW7WN
 * Verbos HTTP: **GET**
 * Headers:
     * Content-Type: application/json
     * Auth: Token
-* Formato JSON del cuerpo de la solicitud: 
-* Respuesta:
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta: No esta funcional pero es un JSON con la información enviada al usuario ingresado
 
 #### Add to Newsletter: 
 * Descripción: Añadir a la newsletter al usuario por el correo ingresado.
-* URL:
+* URL: https://api.pecerasgratis.com/api/newsletter/jaime@kimosolutions.com
 * Verbos HTTP: **GET**
 * Headers:
     * Content-Type: application/json
     * Auth: Token
-* Formato JSON del cuerpo de la solicitud: 
-* Respuesta:
+* Formato JSON del cuerpo de la solicitud: *No aplica* 
+* Respuesta: * Respuesta: No esta funcional pero es un JSON con la información de agregación al newsletter
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
-
-*[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación de este repositorio hasta el despliegue de la solución en una plataforma en la nube.]*
 
 ## 4. Referencias
 
